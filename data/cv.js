@@ -93,6 +93,14 @@ export const cv = {
       icon: 'Code',
       bgColor: 'bg-indigo-500',
     },
+	{
+      title: 'Analista Desarrollador N3',
+      company: 'MVM Ingeniería de Software',
+      period: 'Feb 2009 - May 2009',
+      description: 'Soporte técnico avanzado N3 para XM: resolví incidentes complejos en aplicativos comerciales de energía, desarrollando mejoras y optimizando consultas para asegurar continuidad operativa',
+      icon: 'ShieldCheck',
+	  bgColor: 'bg-amber-600',
+    },
     {
       title: 'Ingeniero de Desarrollo & Soporte',
       company: 'Softland',
