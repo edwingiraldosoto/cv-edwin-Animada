@@ -22,7 +22,7 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="lg:col-span-1 bg-gradient-to-b from-blue-100 to-blue-50 rounded-2xl p-6 h-fit sticky top-24"
+            className="lg:col-span-1 bg-gradient-to-b from-blue-100 to-blue-50 rounded-2xl p-6 h-fit lg:sticky lg:top-24"
           >
             <div className="flex flex-col items-center text-center space-y-4">
               {/* Foto */}
