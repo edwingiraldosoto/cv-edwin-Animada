@@ -109,12 +109,12 @@ export function Hero() {
               </p>
 
               {/* Sectores */}
-              <div className="flex flex-wrap gap-4 pt-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
                 {cv.sectors.map((sector) => (
                   <motion.div
                     key={sector.name}
                     whileHover={{ scale: 1.05 }}
-                    className="px-4 py-3 bg-blue-100 text-blue-700 rounded-lg border border-blue-200 hover:bg-blue-200 transition-all duration-300 cursor-pointer text-center"
+                    className="px-4 py-3 bg-blue-100 text-blue-700 rounded-lg border border-blue-200 hover:bg-blue-200 transition-all duration-300 cursor-pointer text-center h-full"
                   >
                     <div className="font-semibold text-sm">{sector.name}</div>
                     <div className="text-xs text-blue-600 mt-1">{sector.companies}</div>
