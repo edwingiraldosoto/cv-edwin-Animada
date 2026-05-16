@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Zap, Code, Briefcase, Users, TrendingUp } from 'lucide-react'
+import { Zap, Code, Briefcase, Users, TrendingUp, ShieldCheck } from 'lucide-react'
 import { cv } from '@/data/cv';
 import type { LucideIcon } from 'lucide-react';
 
@@ -11,6 +11,7 @@ const iconMap: Record<string, LucideIcon> = {
   Briefcase: Briefcase,
   Users: Users,
   TrendingUp: TrendingUp,
+  ShieldCheck: ShieldCheck,
 };
 
 const containerVariants = {
