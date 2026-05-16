@@ -18,14 +18,14 @@ export function Navigation() {
           >
             {cv.personal.name}
           </motion.div>
-          <motion.div className="flex items-center gap-1.5 sm:gap-2 justify-start lg:justify-end overflow-x-auto scrollbar-hide">
+          <motion.div className="flex items-center gap-1 sm:gap-2 justify-start lg:justify-end overflow-x-auto scrollbar-hide w-full lg:w-auto">
             {cv.navigation.map((item) => (
               <motion.a
                 key={item.href}
                 href={item.href}
                 whileHover={{ y: -2, scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-blue-700 bg-blue-100 hover:bg-blue-200 rounded-full transition-all duration-300 hover:shadow-md whitespace-nowrap flex-shrink-0"
+                className="px-2.5 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm font-medium text-blue-700 bg-blue-100 hover:bg-blue-200 rounded-full transition-all duration-300 hover:shadow-md whitespace-nowrap flex-shrink-0"
               >
                 {item.label}
               </motion.a>
