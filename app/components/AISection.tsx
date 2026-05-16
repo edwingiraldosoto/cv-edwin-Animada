@@ -3,8 +3,9 @@
 import { motion } from 'framer-motion';
 import { Zap, Brain, Workflow } from 'lucide-react';
 import { cv } from '@/data/cv';
+import type { LucideIcon } from 'lucide-react';
 
-const iconMap = {
+const iconMap: Record<string, LucideIcon> = {
   'Brain': Brain,
   'Workflow': Workflow,
 };
