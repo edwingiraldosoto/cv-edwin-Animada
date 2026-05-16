@@ -63,3 +63,12 @@ body {
 .skill-badge {
   @apply inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200/50 text-sm text-slate-600 hover:border-blue-300 hover:bg-blue-50 transition-all duration-300;
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
