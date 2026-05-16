@@ -3,8 +3,9 @@
 import { motion } from 'framer-motion';
 import { Award, BookOpen, GraduationCap, Badge } from 'lucide-react';
 import { cv } from '@/data/cv';
+import type { LucideIcon } from 'lucide-react';
 
-const iconMap = {
+const iconMap: Record<string, LucideIcon> = {
   'GraduationCap': GraduationCap,
   'BookOpen': BookOpen,
 };
@@ -24,9 +25,9 @@ const itemVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { type: 'spring', stiffness: 100, damping: 20 },
+    transition: { type: 'spring' as const, stiffness: 100, damping: 20 },
   },
-};
+} as const;
 
 // Función para ordenar cursos por año descendente
 const getSortedCourses = () => {

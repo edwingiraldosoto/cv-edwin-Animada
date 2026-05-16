@@ -3,8 +3,9 @@
 import { motion } from 'framer-motion';
 import { Zap, Code, Briefcase, Users, TrendingUp } from 'lucide-react'
 import { cv } from '@/data/cv';
+import type { LucideIcon } from 'lucide-react';
 
-const iconMap = {
+const iconMap: Record<string, LucideIcon> = {
   Zap: Zap,
   Code: Code,
   Briefcase: Briefcase,
@@ -27,9 +28,9 @@ const itemVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { type: 'spring', stiffness: 100, damping: 20 },
+    transition: { type: 'spring' as const, stiffness: 100, damping: 20 },
   },
-};
+} as const;
 
 
 export function Experience() {

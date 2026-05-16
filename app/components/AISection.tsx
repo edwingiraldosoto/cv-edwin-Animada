@@ -24,9 +24,9 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { type: 'spring', stiffness: 100, damping: 20 },
+    transition: { type: 'spring' as const, stiffness: 100, damping: 20 },
   },
-};
+} as const;
 
 
 export function AISection() {
@@ -71,9 +71,7 @@ export function AISection() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
         >
-          {cv.ai.map((cap, i) => {
-            const IconComponent = iconMap[cap.icon];
-            return (
+          {cv.ai.map((cap, i) => (
             <motion.div
               key={i}
               variants={itemVariants}
@@ -103,8 +101,7 @@ export function AISection() {
                 </div>
               </div>
             </motion.div>
-            );
-          })}
+          ))}
         </motion.div>
 
       </div>

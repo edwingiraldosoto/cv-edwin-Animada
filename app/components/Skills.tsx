@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Code2, Database, Zap, Brain, GitBranch, Server, Workflow, BarChart3 } from 'lucide-react';
 import { cv } from '@/data/cv';
+import type { LucideIcon } from 'lucide-react';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -19,11 +20,11 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { type: 'spring', stiffness: 100, damping: 20 },
+    transition: { type: 'spring' as const, stiffness: 100, damping: 20 },
   },
-};
+} as const;
 
-const iconMap = {
+const iconMap: Record<string, LucideIcon> = {
   'Lenguajes': Code2,
   'Backend': Code2,
   'Frontend': Database,
@@ -44,7 +45,7 @@ export function Skills() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ type: 'spring', stiffness: 100 }}
+          transition={{ type: 'spring' as const, stiffness: 100 }}
           className="mb-12"
         >
           <h2 className="text-4xl font-bold tracking-tight text-zinc-900 mb-4">
